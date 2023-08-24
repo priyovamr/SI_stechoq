@@ -1,0 +1,47 @@
+QUIZ 2 
+Analisis Git
+
+	Git adalah sistem kontrol proyek yang dapat digunakan untuk mengelola perubahan dalam sebuah kode perangkat lunak ataupun proyek-proyek pengembangan lainnya. Pengontrol ini bertugas untuk mencatat setiap perubahan pada file proyek yang dikerjakan oleh banyak orang maupun sendiri. Git juga dikenal dengan sebutan distributed revision control (VCS terdistribusi) artinya penyimpanan database Git tidak hanya berada dalam satu tempat saja. Ini memungkinan ara pengembang untuk bekerja bersama dalam tim dengan cara yang terstruktur dan efisien serta online maupun online, serta melacak semua perubahan yang terjadi dalam kode secara terperinci. 
+	Konsep dari kerja Git adalah menyimpan perubahan file menjadi 1 file saja. Jadi seperti ini, pada metode penyimpanan konvensional, apabila kita ingin menyimpan perubahan pada file, biasanya kita akan membuat file baru menggunakan fungsi “save as”. Naah hal tersebut, akan membuat file menjadi menumpuk didalam folder proyek sehingga akan menyulitkan proses pengelolaan serta meningkatkan volume memori pada storage lokal komputer. Oleh karena itu, Teknologi Git menjawab permasalahan tersebut dengan sebuah metode database pada proses penyimpanan file. Jadii, Git akan menyimpan semua perubahan yang terjadi pada file kedalam database sehingga hanya akan ada 1 file saja didalam proyek. Git sendiri hanya akan menyimpan delta perubahannya saja, dia tidak akan menyimpan seluruh isi file yang akan memakan banyak memori sehingga git dapat memungkinkan kita kembali ke versi revisi yang diinginkan. 
+	Selain itu, Git juga dapat digunakan untuk kegiatan kolaborasi yang dilakukan oleh banyak orang. Yaa Git, saat ini menjadi tool terpopuler yang digunakan oleh para developer pada aktivitas pengerjaan proyeknya. Dengan sistem Git, kita dapat berkontribusi kedalam proyek seseorang. Selain itu Git juga memiiki sistem yang lebih aman dimana kita dapat tahu sesuatu yang diubah dan siapa yang mengubahnya.
+Fitur-Fitur pada Git 
+•	Version control
+	Git menyimpan setiap perubahan yang diubah pada source code, sehingga memungkinkan pengguna untuk memantau dan mengelola code version yang berbeda.
+
+•	Git Branch
+	Branch merupakan fitur yang paling sering digunakan dalam version control system. Branch digunakan ketika developer akan menambahkan fitur baru atau memperbaiki bug. Fungsi utama dari branch ialah agar pada saat penambahan fitur baru tidak mengganggu source code utama. Ketika pengerjaan dari fitur baru sudah diselesaikan dan sudah di testing, maka branch feature akan dimerge ke dalam branch master/main.
+•	Merging
+	Git memungkinkan pengguna yang telah selesai mendevelop code dan sudah melakukan testing pada branch baru untuk menggabungkan perubahan yang telah dibuat ke branch utama.
+•	Staging area
+	Git memiliki staging area, di mana pengguna dapat memilih perubahan mana yang akan di-commit ke repository.
+•	Git Rebase
+	Git rebase digunakan untuk menggabungkan atau menggeser commit base
+	1.	Pembuatan branch baru yaitu feature
+	2.	Branch pada master/main melakukan commit baru
+	3.	Melakukan Git Rebase untuk menggeser commit base ke posisi terakhir dari commit pada branch master/main
+•	Hooks
+	Git memiliki hooks, yaitu script yang dijalankan secara otomatis saat terjadi peristiwa tertentu di dalam Git, seperti commit atau push.
+•	GUI tools
+	Git menyediakan GUI tools, seperti GitKraken dan Sourcetree, untuk memudahkan penggunaan Git bagi pengguna yang kurang paham command line
+
+Konsep Penting dalam Git
+•	Repository (Repositori)
+	Tempat penyimpanan proyek yang mengandung semua file, direktori, dan riwayat perubahan.
+•	Commit 
+	Setiap perubahan yang dibuat dalam kode sumber disimpan sebagai komit. Komit mencakup perubahan pada berkas tertentu, beserta pesan yang menjelaskan tujuan perubahan tersebut.
+•	Branch
+	Cabang independen dari repositori yang memungkinkan pengembang untuk bekerja pada fitur atau perubahan tertentu tanpa memengaruhi kode di cabang utama (biasanya disebut "master" atau "main").
+•	Merge 
+	Proses menggabungkan perubahan dari satu cabang ke cabang lain. Ini memungkinkan pengembang untuk mengintegrasikan fitur atau perubahan dari cabang yang berbeda.
+•	Pull Request
+	Permintaan untuk menggabungkan perubahan dari satu cabang ke cabang lain, sering digunakan dalam kolaborasi tim di platform seperti GitHub.
+•	Clone 
+	Menggunakan salinan repositori yang ada di server ke komputer lokal, memungkinkan pengembang untuk bekerja secara terisolasi.
+•	Push
+	Mengirimkan perubahan yang telah dicommit ke repositori jarak jauh (remote repository), sehingga perubahan tersebut tersedia untuk diakses oleh pengembang lain.
+•	Pull/Fetch
+	Mengambil perubahan yang ada di repositori jarak jauh dan menggabungkannya ke repositori lokal.
+•	Versioning
+	Git mengelola versi kode dengan baik, memungkinkan pengembang untuk melihat, membandingkan, dan kembali ke versi sebelumnya dengan mudah.
+•	Conflict Resolution 
+	Terkadang, ketika perubahan pada cabang yang berbeda bersinggungan, terjadi konflik. Pengembang harus memutuskan bagaimana menggabungkan perubahan tersebut secara manual.
